@@ -39,3 +39,15 @@ test('clicking login with empty fields shows a required field error', async ({ p
   await expect(loginPage.errorMessage).toBeVisible();
   await expect(loginPage.errorMessage).toContainText('Username is required');
 });
+
+// TEST 4: Locked out user — should show locked out message
+test('locked out user sees a specific error message', async ({ page }) => {
+  const loginPage = new LoginPage(page);
+
+  await loginPage.goto();
+
+  await loginPage.login('locked_out_user', 'secret_sauce');
+
+  await expect(loginPage.errorMessage).toBeVisible();
+  await expect(loginPage.errorMessage).toContainText('locked out');
+});
