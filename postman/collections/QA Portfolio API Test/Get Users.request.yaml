@@ -1,0 +1,7 @@
+$kind: http-request
+name: Get Users
+description: ""
+url: https://reqres.in/api/users
+method: GET
+examples: .resources/Get Users.resources/examples
+order: 1787721754789

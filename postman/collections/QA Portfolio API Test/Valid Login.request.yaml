@@ -1,0 +1,10 @@
+$kind: http-request
+name: Valid Login
+description: ""
+url: https://reqres.in/api/login
+method: POST
+body:
+  type: json
+  content: '{ "email": "eve.holt@reqres.in", "password": "cityslicka" }'
+examples: .resources/Valid Login.resources/examples
+order: 2010013250786876
