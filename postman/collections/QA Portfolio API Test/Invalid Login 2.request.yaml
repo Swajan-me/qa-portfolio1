@@ -1,0 +1,9 @@
+$kind: http-request
+name: Invalid Login 2
+description: ""
+url: https://reqres.in/api/login
+method: POST
+body:
+  type: json
+  content: '{ "email": "eve.holt@reqres.in"}'
+order: 4094224865570268
